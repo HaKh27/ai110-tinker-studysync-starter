@@ -15,15 +15,14 @@ def session_rating(combined_score: int) -> str:
     """Rate a study session from its combined minutes+focus score. Correct and tested."""
     max_rating= 100 
     low_rating= 0
-    while combined_score>low_rating and combined_score<max_rating: 
-        if combined_score >= 90:
-            return "Great"
-        if combined_score >= 80:
-            return "Good"
-        if combined_score >= 70:
-            return "OK"
-        if combined_score >= 60:
-            return "Meh"
+    if combined_score >= 90:
+        return "Great"
+    if combined_score >= 80:
+        return "Good"
+    if combined_score >= 70:
+        return "OK"
+    if combined_score >= 60:
+        return "Meh"
     
     return "Skip"
 

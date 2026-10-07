@@ -13,6 +13,5 @@ def test_session_rating_boundary_90_is_great():
 def test_session_rating_boundary_60_is_skip():
     assert session_rating(59) == "Skip"
 
-
 # TODO: add at least one more test, e.g. a boundary case for "Skip" (a score
 # of 59) or the exact boundary for "Good" (a score of 80).
